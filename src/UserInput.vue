@@ -195,7 +195,7 @@ export default {
         event.preventDefault()
       }
 
-      this.$emit('onType')
+      this.$emit('onType',event,this.$refs.userInput.textContent)
     },
     focusUserInput() {
       this.$nextTick(() => {
